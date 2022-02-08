@@ -1,0 +1,111 @@
+.card {
+    /* border: 1px solid #40414475; */
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 4px #40414475;
+    color: #121212 !important;
+}
+
+::selection {
+    background-color: #f0f8ff;
+    color: #121212;
+}
+
+.cont {
+    padding: 0 21px;
+}
+
+.row {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.card-circle {
+    width: 20%;
+    /* border-radius: 50%;  */
+    background-color: rgb(108, 139, 238);
+    margin: 15px 0 0 0;
+}
+
+.card-circle > .card-content {
+    padding: 20px 10px !important;
+}
+
+.card-holder {
+    display: flex; justify-content: center;
+}
+
+.outlined, .outlined:focus, .outlined:hover {
+    background-color: #252525;
+    box-shadow: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 100%;
+    text-transform: none !important ;
+    /* border-left: 2px solid #536dfe; */
+    border-left: 4px solid #b4b4b4;
+}
+
+.outlined.btn-red {
+    border-color: #fd5050 !important;
+}
+
+.outlined.btn-blue {
+    border-color: #5280ff !important;
+}
+
+.outlined.btn-yellow {
+    border-color: #fcc45c !important;
+}
+
+.outlined.btn-green {
+    border-color: #52ffa0 !important;
+}
+
+/*.outlined.btn-green:hover {*/
+/*    background-color: #52ffa0 !important;*/
+/*    color: #121212 !important;*/
+/*}*/
+
+/*.outlined.btn-red:hover {*/
+/*    !*background-color: #fd5050 !important;*!*/
+/*    border-width: 6px;*/
+/*    color: #f0f8ff !important;*/
+/*}*/
+
+/*.outlined.btn-blue:hover {*/
+/*    background-color: #5280ff !important;*/
+/*}*/
+
+/*.outlined.btn-yellow:hover {*/
+/*    background-color: #fcc45c !important;*/
+/*    color: #121212 !important;*/
+/*}*/
+/*.outlined.btn-grey:hover {*/
+/*    background-color: #b4b4b4 !important;*/
+/*}*/
+
+.outlined:hover {
+    /*color: #121212 !important;*/
+    border-width: 6px;
+}
+
+body {
+    color: #1d1d1d;
+}
+
+/* Row */
+
+.row {
+    padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .card-circle {
+        width: 26% !important;
+    }
+
+    .card-holder {
+        margin: 10px;
+    }
+}
