@@ -10,29 +10,33 @@ const useHttp = () => {
 
   const request = useCallback(async (url, method = 'GET', body = null, headers = {}) => {
     setLoading(true);
-    if (body) {
-      body = JSON.stringify(body);
-      headers['Content-Type'] = 'application/json';
+
+    // Mock login
+
+    if (body.username !== 'admin' && body.password !== 'admin') {
+      setError({message: 'Сліпий, чи просто прикалуєшся, попуск??'})
+      setLoading(false)
+      throw new Error("stop")
     }
 
-    const res = await fetch('http://localhost:8080' + url, {method, body, headers});
+    // if (body) {
+    //   body = JSON.stringify(body);
+    //   headers['Content-Type'] = 'application/json';
+    // }
 
-    
-    try {
-      const data = await res.json();
+    // const res = await fetch('http://localhost:8080' + url, {method, body, headers});
+    //
+    //
 
-      if (!res.ok) {
-        setError({message: data.error || 'Жопа, АПІ накрилось'});
-        setLoading(false);
-        throw new Error("stop")
-      }
-  
-      return data;
-  
-    } catch(e) {
-      setLoading(false);
-      return {}
-    }
+    // const data = await res.json();
+    //
+    // if (!res.ok) {
+    //   setError({message: data.error || 'Жопа, АПІ накрилось'});
+    //   setLoading(false);
+    //   throw new Error("stop")
+    // }
+
+    return {token: 'asdasd'};
     
   }, [setLoading, setError])
 

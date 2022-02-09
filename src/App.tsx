@@ -4,6 +4,9 @@ import useRoutes from "./hooks/routes.hook";
 import {BrowserRouter} from "react-router-dom";
 import AuthContext from './context/AuthContext';
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
+import './css/main.css'
 
 function App() {
     const { login, token, logout } = useAuth();
@@ -21,6 +24,7 @@ function App() {
                     <Navbar/>
                     {routes}
                 </BrowserRouter>
+                <Footer/>
             </AuthContext.Provider>
         </>
     );

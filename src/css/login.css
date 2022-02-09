@@ -1,0 +1,105 @@
+.main > .card {
+    background-color: transparent;
+    box-shadow: none;
+    /*border: 1px solid #ffab40;*/
+    border: 1px solid #1d1d1d;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.main > .card > .card-content {
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+}
+
+.btn.current {
+    background-color: #1d1d1d;
+    color: #f0f8ff;
+    box-shadow: none;
+    width: 60%;
+    border-radius: 5px;
+    border-left: 4px solid #5280ff;
+}
+
+.btn.current:hover {
+    border-width: 6px;
+}
+
+.btn-flat {
+    color: #1d1d1d;
+}
+
+/* label color */
+.input-field label {
+    color: #1d1d1d;
+}
+
+.input-field input[type=text], .input-field input[type=password] {
+    border-bottom: 1px solid #1d1d1d;
+    /* box-shadow: 0 1px 0 0 #ffab40; */
+    color: #1d1d1d;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label, .input-field input[type=password]:focus + label {
+    color: #5280ff !important;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus, input[type=password]:focus {
+    border-bottom: 1px solid #5280ff !important;
+    box-shadow: 0 1px 0 0 #5280ff !important;
+}
+
+@media only screen and (max-width: 700px) {
+    .main > .card {
+        width: 90%;
+    }
+
+    main {
+        min-height:min-content;
+    }
+
+    .alert {
+        width: 90% !important;
+    }
+}
+
+/* Alert */
+
+.alert {
+    background-color: transparent;
+    box-shadow: none;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #e94343;
+    border-radius: 10px;
+    width: 70%;
+}
+
+.alert > .card-content {
+    padding: 10px !important;
+    color: #e94343;
+}
+
+.spinner-blue-only {
+    border-color: #1d1d1d;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+/* AutoComplete input style */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #ffffff inset !important;
+    -webkit-text-fill-color: #5280ff !important;
+}

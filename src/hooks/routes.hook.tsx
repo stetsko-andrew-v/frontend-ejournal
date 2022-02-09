@@ -1,5 +1,6 @@
 import {Routes, Route} from "react-router-dom";
 import HomePage from "../pages/HomePage";
+import LoginPage from "../pages/LoginPage";
 
 const useRoutes = (isAuthenticated: boolean) => {
   if (isAuthenticated) {
@@ -12,7 +13,7 @@ const useRoutes = (isAuthenticated: boolean) => {
 
   return (
     <Routes>
-      <Route path="/*" element={<h1>Hello</h1>}/>
+      <Route path="/*" element={<LoginPage/>}/>
     </Routes>
   );
 }

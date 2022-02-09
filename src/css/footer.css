@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.page-footer {
+    padding: 10px;
+    /*background-color: #121212;*/
+    background-color: transparent;
+    color: #5a5a5a !important;
+    display: flex; justify-content: space-between; align-items: center;
+}
+
+.footer-link {
+    box-shadow: none;
+    background-color: transparent;
+    color: #5a5a5a;
+    border: 1px solid rgb(61, 61, 61);
+}
+
+.footer-link:hover, .footer-link:focus {
+    box-shadow: none;
+    color: #f0f8ff !important;
+    background-color: #5a5a5a !important;
+}
