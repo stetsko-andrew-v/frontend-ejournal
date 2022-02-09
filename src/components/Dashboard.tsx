@@ -1,5 +1,6 @@
 import '../css/dashboard.css'
 import '../css/circle.css'
+import {Link} from "react-router-dom";
 
 const Dashboard = () => {
     return (
@@ -36,9 +37,9 @@ const Dashboard = () => {
                                 </tr>
                                 </tbody>
                             </table>
-                            <button className="btn outlined btn-grey">
+                            <Link to={'/timetable'} className="btn outlined btn-grey">
                                 Докладніше
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -76,9 +77,9 @@ const Dashboard = () => {
                                 </tr>
                                 </tbody>
                             </table>
-                            <button className="btn outlined btn-grey">
+                            <Link to={'/timetable'} className="btn outlined btn-grey">
                                 Докладніше
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

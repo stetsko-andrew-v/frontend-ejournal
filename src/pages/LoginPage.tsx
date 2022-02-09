@@ -59,7 +59,7 @@ const LoginPage = () => {
     }
 
     return (
-        <div className="main">
+        <div className="main login-main">
             <div className="card">
                 <div className="center" style={{padding: '16px 24px', borderBottom: '1px solid rgba(160,160,160,0.2)'}}>
                     <span className="card-title center">Login</span>

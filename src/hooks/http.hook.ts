@@ -13,7 +13,7 @@ const useHttp = () => {
 
     // Mock login
 
-    if (body.username !== 'admin' && body.password !== 'admin') {
+    if (body.username !== 'admin' || body.password !== 'admin') {
       setError({message: 'Сліпий, чи просто прикалуєшся, попуск??'})
       setLoading(false)
       throw new Error("stop")

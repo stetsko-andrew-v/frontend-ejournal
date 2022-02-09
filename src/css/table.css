@@ -1,0 +1,14 @@
+.row {
+    /* Todo replace with one */
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 15px;
+}
+
+tr {
+    border-color: #cecece;
+}
+
+table.centered {
+    margin-bottom: 10px !important;
+}
