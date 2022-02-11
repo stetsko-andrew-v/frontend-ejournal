@@ -64,7 +64,7 @@ export default class TimeTablePage extends Component<MyProps, MyState> {
     render() {
         return (
             <div className="main">
-                <div className="row">
+                <div className="row table-row">
                     {this.state.data.map((half, index) => {
                         return (
                             <div className="col s12 m6" key={index}>

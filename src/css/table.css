@@ -1,5 +1,4 @@
-.row {
-    /* Todo replace with one */
+.table-row {
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 15px;
@@ -11,4 +10,10 @@ tr {
 
 table.centered {
     margin-bottom: 10px !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .table-row {
+        margin: 0 !important;
+    }
 }

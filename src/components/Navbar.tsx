@@ -12,19 +12,19 @@ const Navbar = () => {
                 <Link to={'/'} className="brand-logo center">Чернівецький ліцей №1</Link>
                 {token ? <ul id="nav-mobile" className="right" style={{height: '100%'}}>
                     <li style={{height: '100%'}}>
-                        {window.innerWidth >= 600 ? <Link onClick={logout} to={'/'} className="nav-btn">
-                            <img
-                                className="circle responsive-img left profile-pic"
-                                src="http://192.168.3.3:5500/photo_2022-01-17_23-00-41.jpg"
-                                alt={"АПІ НАКРИЛОСЬ, стучіться Стецьку"}
-                                style={{marginRight: '10px'}}
-                            />Зеленько Олександр</Link>: <Link to={'/'} style={{height: '100%'}} className="nav-btn">
+                        <a className="nav-btn">
                             <img
                                 className="circle responsive-img profile-pic"
-                                src="http://192.168.3.3:5500/photo_2022-01-17_23-00-41.jpg"
-                                alt={"АПІ НАКРИЛОСЬ, стучіться Стецьку"}
-                            />
-                        </Link>}
+                                src={'test/photo_2022-01-17_23-00-41.jpg'}
+                                alt={"0"}
+                                // style={{marginRight: '10px'}}
+                            /><span>Зеленько Олександр</span>
+                        </a>
+                    </li>
+                    <li className="li-active">
+                        <a onClick={logout}>
+                            <i className="material-icons">exit_to_app</i>
+                        </a>
                     </li>
                 </ul> : <></>}
             </div>

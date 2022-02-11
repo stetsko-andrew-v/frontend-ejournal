@@ -56,9 +56,9 @@
         width: 90%;
     }
 
-    main {
-        min-height:min-content;
-    }
+    /*main {*/
+    /*    min-height: 95vh !important;*/
+    /*}*/
 
     .alert {
         width: 90% !important;
