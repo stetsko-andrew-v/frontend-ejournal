@@ -2,6 +2,7 @@ import {Routes, Route} from "react-router-dom";
 import HomePage from "../pages/HomePage";
 import LoginPage from "../pages/LoginPage";
 import TimeTablePage from "../pages/TimeTablePage";
+import BlogPage from "../pages/BlogPage";
 
 const useRoutes = (isAuthenticated: boolean) => {
   if (isAuthenticated) {
@@ -15,7 +16,8 @@ const useRoutes = (isAuthenticated: boolean) => {
 
   return (
     <Routes>
-      <Route path="/*" element={<LoginPage/>}/>
+        <Route path="/*" element={<BlogPage/>}/>
+        <Route path="/login/*" element={<LoginPage/>}/>
     </Routes>
   );
 }

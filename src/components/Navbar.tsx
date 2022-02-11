@@ -11,7 +11,7 @@ const Navbar = () => {
             <div className="nav-wrapper">
                 <Link to={'/'} className="brand-logo center">Чернівецький ліцей №1</Link>
                 {token ? <ul id="nav-mobile" className="right" style={{height: '100%'}}>
-                    <li style={{height: '100%'}}>
+                    <li style={{height: '100%'}} className="profile-btn">
                         <a className="nav-btn">
                             <img
                                 className="circle responsive-img profile-pic"
@@ -26,7 +26,14 @@ const Navbar = () => {
                             <i className="material-icons">exit_to_app</i>
                         </a>
                     </li>
-                </ul> : <></>}
+                </ul> : <ul id="nav-mobile" className="right" style={{height: '100%'}}>
+                    <li className="li-active">
+                        <Link to={'/login'} className="login-btn">
+                            <i className="material-icons">account_box</i>
+                            <span>Login</span>
+                        </Link>
+                    </li>
+                </ul>}
             </div>
         </nav>
     )

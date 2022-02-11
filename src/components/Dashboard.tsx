@@ -103,7 +103,7 @@ const Dashboard = () => {
             </div>
             <div className="cont">
                 <div className="card">
-                    <div className="card-content">
+                    <div className="card-content center">
                         <span className="card-title center">Аналітика</span>
                         <div className="row">
                             <div className="col s12 m4 center">
@@ -146,6 +146,9 @@ const Dashboard = () => {
                                 </div>
                             </div>
                         </div>
+                        <Link to={'/'} className="btn short outlined btn-grey" style={{marginTop: '20px'}}>
+                            Докладніше
+                        </Link>
                     </div>
                 </div>
             </div>

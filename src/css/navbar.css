@@ -24,6 +24,11 @@ nav {
     font-size: 20px !important;
 }
 
+.login-btn > i {
+    margin-right: 15px;
+    float: left;
+}
+
 @media only screen and (max-width: 600px) {
     .nav-wrapper > a {
         font-size: 16px !important;
@@ -38,6 +43,14 @@ nav {
     }
 
     .nav-btn > span {
-        content-visibility: hidden;
+        content-visibility: hidden !important;
+    }
+
+    .login-btn > span {
+        display: none !important;
+    }
+
+    .login-btn > i {
+        margin: 0;
     }
 }

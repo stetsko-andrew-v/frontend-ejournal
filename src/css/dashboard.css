@@ -40,10 +40,14 @@
     box-shadow: none;
     margin-top: 10px;
     border-radius: 5px;
-    width: 100%;
     text-transform: none !important ;
+    width: 100%;
     /* border-left: 2px solid #536dfe; */
     border-left: 4px solid #b4b4b4;
+}
+
+.short.outlined {
+    width: 20%;
 }
 
 .outlined.btn-red {
