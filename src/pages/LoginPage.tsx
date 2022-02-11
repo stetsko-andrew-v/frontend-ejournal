@@ -64,20 +64,19 @@ const LoginPage = () => {
                 <div className="center" style={{padding: '16px 24px', borderBottom: '1px solid rgba(160,160,160,0.2)'}}>
                     <span className="card-title center">Login</span>
                 </div>
-                <form>
-                    <div className="card-content" style={{padding: '10px 24px !important'}}>
-                        {
-                            error.message &&
-                            <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                                <div className="card alert">
-                                    <div className="card-content">
-                                        <span className="center">{error.message}</span>
-                                    </div>
+                <div className="card-content" style={{padding: '10px 24px !important'}}>
+                    {
+                        error.message &&
+                        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                            <div className="card alert">
+                                <div className="card-content">
+                                    <span className="center">{error.message}</span>
                                 </div>
                             </div>
-                        }
+                        </div>
+                    }
 
-                        {/* <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                    {/* <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                                 <div className="card alert">
                                     <div className="card-content">
                                         <span className="center">Invalid Username or Password</span>
@@ -85,33 +84,32 @@ const LoginPage = () => {
                                 </div>
                             </div> */}
 
-                        <div className="input-field">
-                            <input id="first_name"
-                                   type="text"
-                                   name="username"
-                                   value={form.username}
-                                   onChange={change}
-                            />
-                            <label htmlFor="username">Username</label>
-                        </div>
-
-                        <div className="input-field">
-                            <input id="password"
-                                   type="password"
-                                   name="password"
-                                   value={form.password}
-                                   onChange={change}
-                            />
-                            <label htmlFor="password">Password</label>
-                        </div>
-
-                        <span style={{color: '#808080', fontSize: fontSize + 'px'}}>* login: admin, password admin</span>
-
+                    <div className="input-field">
+                        <input id="first_name"
+                               type="text"
+                               name="username"
+                               value={form.username}
+                               onChange={change}
+                        />
+                        <label htmlFor="username">Username</label>
                     </div>
-                    <div className="card-action center">
-                        <button className="btn current" onClick={login}>Login</button>
+
+                    <div className="input-field">
+                        <input id="password"
+                               type="password"
+                               name="password"
+                               value={form.password}
+                               onChange={change}
+                        />
+                        <label htmlFor="password">Password</label>
                     </div>
-                </form>
+
+                    <span style={{color: '#808080', fontSize: fontSize + 'px'}}>* login: admin, password admin</span>
+
+                </div>
+                <div className="card-action center">
+                    <button className="btn current" onClick={login}>Login</button>
+                </div>
             </div>
         </div>
     )

@@ -42,7 +42,7 @@ nav {
         margin: 0 !important;
     }
 
-    .nav-btn > span {
+    .nav-btn > span, .nav-btn {
         content-visibility: hidden !important;
     }
 

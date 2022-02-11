@@ -112,4 +112,8 @@ body {
     .card-holder {
         margin: 10px;
     }
+
+    .short.outlined {
+        width: 100%;
+    }
 }
