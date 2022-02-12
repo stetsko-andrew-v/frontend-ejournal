@@ -33,7 +33,7 @@ const Navbar = () => {
                 <ul id="slide-out" className="sidenav">
                     <li>
                         <div className="user-view">
-                            <div className="background" style={{backgroundColor: '#000'}}/>
+                            <div className="background"/>
                             <a href="#user"><img className="circle" src={'test/vsk.jpg'}/></a>
                             <a href="#name"><span className="name">VSK aka Кроконей 500</span></a>
                             <a href="#email"><span className="email">kirik_grom@gmail.com</span></a>
@@ -47,7 +47,7 @@ const Navbar = () => {
                         <div className="divider"/>
                     </li>
                     {/*<li><a className="subheader">Subheader</a></li>*/}
-                    <li><a href="#!"><i className="material-icons">exit_to_app</i>Logout</a></li>
+                    <li><a onClick={logout}><i className="material-icons">exit_to_app</i>Logout</a></li>
                 </ul>
 
                 <ul className="left">
