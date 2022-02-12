@@ -34,7 +34,8 @@ const Navbar = () => {
                     <li>
                         <div className="user-view">
                             <div className="background" style={{backgroundColor: '#000'}}/>
-                            <a href="#name"><span className="name">Boss of Gym aka VSK</span></a>
+                            <a href="#user"><img className="circle" src={'test/vsk.jpg'}/></a>
+                            <a href="#name"><span className="name">VSK aka Кроконей 500</span></a>
                             <a href="#email"><span className="email">kirik_grom@gmail.com</span></a>
                         </div>
                     </li>
@@ -60,10 +61,10 @@ const Navbar = () => {
                         <a className="nav-btn">
                             <img
                                 className="circle responsive-img profile-pic"
-                                src={'test/photo_2022-01-17_23-00-41.jpg'}
+                                src={'test/vsk.jpg'}
                                 alt={"0"}
                                 // style={{marginRight: '10px'}}
-                            /><span>Зеленько Олександр</span>
+                            /><span>Кирилл Кирпич</span>
                         </a>
                     </li>
                     <li className="li-active">
