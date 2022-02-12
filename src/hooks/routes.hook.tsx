@@ -10,6 +10,7 @@ const useRoutes = (isAuthenticated: boolean) => {
               <Routes>
                   <Route path="/" element={<HomePage/>}/>
                   <Route path="/timetable/*" element={<TimeTablePage/>}/>
+                  <Route path="/blog" element={<BlogPage/>}/>
                   <Route path="/*" element={<Navigate to={'/'}/>}/>
               </Routes>
           );
