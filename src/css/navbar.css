@@ -48,6 +48,7 @@ nav {
 
     .nav-btn > span, .nav-btn {
         content-visibility: hidden !important;
+        display: none !important;
     }
 
     .login-btn > span {
