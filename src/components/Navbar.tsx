@@ -31,23 +31,29 @@ const Navbar = () => {
                 <Link to={'/'} className="brand-logo center">Чернівецький ліцей №1</Link>
 
                 <ul id="slide-out" className="sidenav">
-                    <li>
+                    {token ? <li>
                         <div className="user-view">
                             <div className="background"/>
                             <a href="#user"><img className="circle" src={'test/vsk.jpg'}/></a>
                             <a href="#name"><span className="name">VSK aka Кроконей 500</span></a>
                             <a href="#email"><span className="email">kirik_grom@gmail.com</span></a>
                         </div>
-                    </li>
+                    </li> : <></>}
                     <li><Link to={'/'}>Головна</Link></li>
-                    <li><Link to={'/timetable'}>Щоденник</Link></li>
-                    <li><Link to={'/'}>Аналітика</Link></li>
-                    <li><Link to={'/blog'}>Блог Андрійка Всеволодовича</Link></li>
+                    {token ? <>
+                        <li><Link to={'/timetable'}>Щоденник</Link></li>
+                        <li><Link to={'/'}>Аналітика</Link></li>
+                        <li><Link to={'/blog'}>Блог Андрійка Всеволодовича</Link></li>
+                    </>: <></>}
                     <li>
                         <div className="divider"/>
                     </li>
                     {/*<li><a className="subheader">Subheader</a></li>*/}
-                    <li><a onClick={logout}><i className="material-icons">exit_to_app</i>Logout</a></li>
+                    {token ? <li>
+                        <a onClick={logout}><i className="material-icons">exit_to_app</i>Logout</a>
+                    </li> : <li>
+                        <Link to={'/login'}><i className="material-icons">account_box</i>Login</Link>
+                    </li>}
                 </ul>
 
                 <ul className="left">
