@@ -1,7 +1,7 @@
 import '../css/navbar.css'
 import {useContext, useEffect} from "react";
 import AuthContext from "../context/AuthContext";
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 
 const Navbar = () => {
     const {token, logout} = useContext(AuthContext);
@@ -14,6 +14,14 @@ const Navbar = () => {
             outDuration: 100
         }).close()
     })
+
+    const location = useLocation();
+
+    useEffect(() => {
+        const elem = document.querySelector(".sidenav");
+
+        M.Sidenav.getInstance(elem!).close()
+    }, [location]);
 
     const toggleSideNav = () => {
         const elem = document.querySelector(".sidenav");
