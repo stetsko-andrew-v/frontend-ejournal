@@ -8,8 +8,7 @@ const Navbar = () => {
 
     useEffect(() => {
         const elem = document.querySelector(".sidenav");
-        if (elem == null) return
-        M.Sidenav.init(elem, {
+        M.Sidenav.init(elem!, {
             edge: "left",
             inDuration: 100,
             outDuration: 100
@@ -18,9 +17,8 @@ const Navbar = () => {
 
     const toggleSideNav = () => {
         const elem = document.querySelector(".sidenav");
-        if (elem == null) return
 
-        const inst = M.Sidenav.getInstance(elem)
+        const inst = M.Sidenav.getInstance(elem!)
         if (inst.isOpen) inst.close()
         else inst.open()
     }
@@ -34,9 +32,9 @@ const Navbar = () => {
                     {token ? <li>
                         <div className="user-view">
                             <div className="background"/>
-                            <a href="#user"><img className="circle" src={'test/vsk.jpg'}/></a>
-                            <a href="#name"><span className="name">VSK aka Кроконей 500</span></a>
-                            <a href="#email"><span className="email">kirik_grom@gmail.com</span></a>
+                            <Link to={'/profile'}><img className="circle" src={'test/vsk.jpg'}/></Link>
+                            <Link to={'/profile'}><span className="name">VSK aka Кроконей 500</span></Link>
+                            <Link to={'/profile'}><span className="email">kirik_grom@gmail.com</span></Link>
                         </div>
                     </li> : <></>}
                     <li><Link to={'/'}>Головна</Link></li>
@@ -64,14 +62,14 @@ const Navbar = () => {
 
                 {token ? <ul id="nav-mobile" className="right" style={{height: '100%'}}>
                     <li style={{height: '100%'}} className="profile-btn">
-                        <a className="nav-btn">
+                        <Link to={'/profile'} className="nav-btn">
                             <img
                                 className="circle responsive-img profile-pic"
                                 src={'test/vsk.jpg'}
                                 alt={"0"}
                                 // style={{marginRight: '10px'}}
                             /><span>Кирилл Кирпич</span>
-                        </a>
+                        </Link>
                     </li>
                     <li className="li-active">
                         <a onClick={logout}>
